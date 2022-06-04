@@ -20,6 +20,14 @@ h1, h2, h3, h4, h5, h6, p{
     padding-bottom: 94px;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -37,16 +45,8 @@ main{
 
 /* ⁡⁢⁣⁢𝗛𝗲𝗮𝗱𝗲𝗿⁡ */
 
-nav{
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 header{
     border-bottom: 1px solid #ECECEC;
-
 }
 
 .header-container{
@@ -54,7 +54,18 @@ header{
     align-items: center; 
 }
 
-.web{
+.nav{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav__logo{
+    margin-right: 75px;
+}
+
+.nav__web{
     color: #2196F3;
     font-family: 'Raleway';
     font-weight: 700;
@@ -62,7 +73,7 @@ header{
     line-height: 31px;
 }
 
-.studio{
+.nav__studio{
     color: black;
     font-family: 'Raleway';
     font-weight: 700;
@@ -70,29 +81,24 @@ header{
     line-height: 31px;
 }
 
-.web-link-header{
-    margin-right: 75px;
-}
-
-
-.header-list{
+.nav__list{
     display: flex;
     margin-right: 42px;
     justify-content: center;
 }
 
 
-.list{
+.nav__item{
     margin: 0;
     padding: 0;
     margin-right: 42px;
 }
 
-.list:last-child{
+.nav__item:last-child{
     margin-right: 0;
 }
 
-.link{
+.nav__link{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -104,23 +110,21 @@ header{
     padding-bottom: 32px;
 
     transition: 250ms ease;
-}
-
-.link:hover{
-    color: #2196F3;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:focus{
-    color: #2196F3;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-link{
     position: relative;
 }
 
-.portfolio-link::after{
+.nav__link:hover{
+    color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link:focus{
+    color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.nav__item-portfolio-link::after{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -132,19 +136,15 @@ header{
     border-radius: 2px;   
 }
 
-a{
-    text-decoration: none;
-}
 
-ul{
-    list-style-type: none;
-}
+/* ⁡⁢⁣⁢𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
 
-.header-navigation{
+
+.header__group{
     margin-left: auto;
 }
 
-.email, .tel{
+.header__email, .header__tel{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -154,39 +154,35 @@ ul{
     transition: 250ms ease;
 }
 
-.svg{
-    margin-right: 10px;
-}
-
-.email:hover, .tel:hover{
+.header__email:hover, .header__tel:hover{
     color: #2196F3;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email:focus, .tel:focus{
+.header__email:focus, .tel:focus{
     color: #2196F3;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email{
+.header__email{
     margin-right: 50px;
 }
 
-
-/* ⁡⁢⁣⁢𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
-
-.icon-link{
-    fill: currentColor;
-}
-
-.header-cont-icon{
+.header__icon{
     margin-right: 10px;
-}
+    fill: currentColor;
 
+}
 
 /* ⁡⁢⁣⁢𝗕𝘂𝘁𝘁𝗼𝗻𝘀⁡ */
 
-.button{
+.buttons__list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button__item{
     padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -205,7 +201,7 @@ ul{
     transition: 250ms ease;
 } 
 
-.button:hover, .button:focus{
+.button__item:hover, .button__item:focus{
     background:#2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
@@ -221,15 +217,9 @@ ul{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-.main-buttons{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+/* ⁡⁢⁣⁢⁡⁢⁣⁢𝗣𝗵𝗼𝘁𝗼𝘀 ⁡ */
 
-/* ⁡⁢⁣⁢𝗣𝗵𝗼𝘁𝗼⁡  */
-
-.main-photo{
+.photo__list{
     margin-right: -30px;
     display: flex;
     flex-wrap: wrap;
@@ -237,7 +227,7 @@ ul{
     padding: 0;
 }
 
-.photo{
+.photo__item{
     /* position: relative; */
     margin-right: 30px;
     margin-bottom: 30px;
@@ -251,25 +241,25 @@ ul{
     margin-top: 0;
 }
 
-.photo-discr{
+.photo__discr{
     padding: 20px 24px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
 
-.photo:nth-child(7){
+.photo__item:nth-child(7){
     margin-bottom: 0;
 }
 
-.photo:nth-child(8){
+.photo__item:nth-child(8){
     margin-bottom: 0;
 }
 
-.photo:nth-child(9){
+.photo__item:nth-child(9){
     margin-bottom: 0;
 }
 
-.photo:hover ,.photo:focus{
+.photo__item:hover ,.photo:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -297,40 +287,8 @@ p{
 
 /* ⁡⁢⁣⁢Анімація⁡ */
 
-.overlay{
-    position: relative;
-    overflow: hidden;
-    /* display: inline-block; */
-}
 
-.overlay-photo{
-    position:static;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.overlay-text{
-    position: absolute;
-    bottom: 0;
-    left: 0; 
-}
-
-.overlay-text{
-    padding: 63px 24px;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-
-    background-color: rgba(33, 150, 243, 0.9); 
-    transform: translateY(100%);
-    transition: 250ms ease;
-}
-
-.overlay-item:hover .overlay-text{
+.overlay:hover .overlay__text{
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -347,7 +305,7 @@ p{
     }
 } 
 
- @keyframes from-bottom-to-top{
+@keyframes from-bottom-to-top{
     from{
         transform: translateY(250px);
         /* opacity: 0;  */
@@ -359,7 +317,43 @@ p{
     }
 }
 
+
+.overlay__item{
+    position: relative;
+    overflow: hidden;
+    /* display: inline-block; */
+}
+
+.overlay__photo{
+    position:static;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay__text{
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+
+.overlay__text{
+    padding: 63px 24px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    background-color: rgba(33, 150, 243, 0.9); 
+    transform: translateY(100%);
+    transition: 250ms ease;
+}
+
+
 /* ⁡⁣⁢⁣𝔽𝕠𝕠𝕥𝕖𝕣⁡ */
+
 
 .footer{
     background: #2F303A;

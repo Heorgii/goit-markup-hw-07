@@ -20,29 +20,30 @@
     <!--Main information -->
   <header>
       <div class="container header-container">
-        <nav>
-          <a class="web-link-header" href="#"><span class="web">Web</span> <span class="studio">Studio</span> </a>
-          <ul class="header-list">  
-              <li class="list"><a class="link navigation-link" href="./index.html">Студия</a></li>
-              <li class="list"><a class="link navigation-link portfolio-link" href="./portfolio.html">Портфолио</a></li>
-              <li class="list"><a class="link navigation-link" href="#">Контакты</a></li>
+
+        <nav class="nav"> 
+          <a class="nav__logo" href="#"><span class="nav__web">Web</span> <span class="nav__studio">Studio</span> </a>
+          <ul class="nav__list">  
+              <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
+              <li class="nav__item"><a class="nav__link nav__item-portfolio-link" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
 
-      <div class="header-navigation">
+      <div class="header__group">
         
-        <a class="email icon-link" href="mailto:info@devstudio.com">
+        <a class="header__email" href="mailto:info@devstudio.com">
           
-          <svg class="header-cont-icon"  width="16" height="12">
+          <svg class="header__icon"  width="16" height="12">
             <use href="./images/sprite.svg#posht"></use>
           </svg>
 
           info@devstudio.com</a>
 
       
-        <a class="tel icon-link" href="tel:+380961111111">
+        <a class="header__tel" href="tel:+380961111111">
           
-          <svg class="header-cont-icon" width="10" height="16">
+          <svg class="header__icon" width="10" height="16">
             <use href="./images/sprite.svg#smartphone"></use>
           </svg>
 
@@ -57,26 +58,27 @@
     <section class="section">
       <div class="container">
 
-          <ul class="main-buttons">
-            <li><button class="button" type="button">Все</button></li>
-            <li><button class="button" type="button">Веб-сайты</button></li>
-            <li><button class="button" type="button">Приложения</button></li>
-            <li><button class="button" type="button">Дизайн</button></li>
-            <li><button class="button" type="button">Маркетинг</button></li>
+          <ul class="buttons__list">
+            <li><button class="button__item" type="button">Все</button></li>
+            <li><button class="button__item" type="button">Веб-сайты</button></li>
+            <li><button class="button__item" type="button">Приложения</button></li>
+            <li><button class="button__item" type="button">Дизайн</button></li>
+            <li><button class="button__item" type="button">Маркетинг</button></li>
           </ul>    
             
          <!-- Photos -->
  
-      <ul class="main-photo">
+      <ul class="photo__list">
 
-        <li class="photo overlay-item"> 
+        <li class="photo__item overlay"> 
               
           <a href="">
-            <div class="overlay">
 
-             <img class="overlay-photo" src="./images/phot1.jpg" alt="Веб-сайт" width="370" height="294">
+            <div class="overlay__item">
 
-              <p class="overlay-text">
+             <img class="overlay__photo" src="./images/phot1.jpg" alt="Веб-сайт" width="370" height="294">
+
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
@@ -84,86 +86,88 @@
             
             </div>
         
-              <div class="photo-discr">
+              <div class="photo__discr">
                <h3>Технокряк</h3>
                 <p>Веб-сайт</p>
               </div>
           </a>
         </li>  
         
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
 
         <a href="">
 
-          <div class="overlay">
+          <div class="overlay__item">
 
-            <img class="overlay-photo" src="./images/phot2.jpg" alt="Дизайн" width="370" height="294">
+            <img class="overlay__photo" src="./images/phot2.jpg" alt="Дизайн" width="370" height="294">
 
-            <p class="overlay-text">
+            <p class="overlay__text">
               Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                Все это позволит посетителю получить исчерпывающие сведения о компании 
                или частном лице.
              </p>
           </div>
 
-          <div class="photo-discr">
+          <div class="photo__discr">
             <h3>Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </div>
         </a>
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot3.jpg" alt="Приложение" width="370" height="294">
 
-              <p class="overlay-text">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot3.jpg" alt="Приложение" width="370" height="294">
+
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-          <div class="photo-discr third">
+          <div class="photo__discr third">
             <h3>Ресторан Seafood</h3>
             <p>Приложение</p>
           </div>
           </a>
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot4.jpg" alt="Маркетинг" width="370" height="294">
 
-              <p class="overlay-text">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot4.jpg" alt="Маркетинг" width="370" height="294">
+
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-          <div class="photo-discr">
+          <div class="photo__discr">
             <h3>Проект Prime</h3>
             <p>Маркетинг</p>
           </div>
           </a>
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot5.jpg" alt="Приложение" width="370" height="294">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot5.jpg" alt="Приложение" width="370" height="294">
 
-              <p class="overlay-text">
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-         <div class="photo-discr">
+         <div class="photo__discr">
           <h3>Проект Boxes</h3>
           <p>Приложение</p>
          </div>
@@ -171,57 +175,57 @@
          
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot6.jpg" alt="Веб-сайт" width="370" height="294">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot6.jpg" alt="Веб-сайт" width="370" height="294">
 
-              <p class="overlay-text">
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-            <div class="photo-discr third">
+            <div class="photo__discr third">
               <h3>Inspiration has no Borders</h3>
               <p>Веб-сайт</p>
             </div></a>
 
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot7.jpg" alt="Дизайн" width="370" height="294">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot7.jpg" alt="Дизайн" width="370" height="294">
 
-              <p class="overlay-text">
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-            <div class="photo-discr last-photo">
+            <div class="photo__discr last-photo">
               <h3>Издание Limited Edition</h3>
               <p>Дизайн</p>
             </div></a>
          
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot8.jpg" alt="Маркетинг" width="370" height="294">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot8.jpg" alt="Маркетинг" width="370" height="294">
 
-              <p class="overlay-text">
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-          <div class="photo-discr last-photo">
+          <div class="photo__discr last-photo">
             <h3>Проект LAB</h3>
             <p>Маркетинг</p>
           </div>
@@ -229,19 +233,19 @@
 
         </li>
 
-        <li class="photo overlay-item">
+        <li class="photo__item overlay">
           <a href="">
-            <div class="overlay">
-              <img class="overlay-photo" src="./images/phot9.jpg" alt="Приложение" width="370" height="294">
+            <div class="overlay__item">
+              <img class="overlay__photo" src="./images/phot9.jpg" alt="Приложение" width="370" height="294">
 
-              <p class="overlay-text">
+              <p class="overlay__text">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                  Все это позволит посетителю получить исчерпывающие сведения о компании 
                  или частном лице.
                </p>
             </div>
             
-            <div class="photo-discr third last-photo">
+            <div class="photo__discr third last-photo">
               <h3>Growing Business</h3>
               <p>Приложение</p>
             </div></a>
@@ -257,7 +261,7 @@
     <footer class="footer">
       <div class="container">
          <div class="fot">
-          <a href="#"><span class="web">Web</span> <span class="studio-footer">Studio</span></a>
+          <a href="#"><span class="nav__web">Web</span> <span class="studio-footer">Studio</span></a>
           <address class="adres">м. Киев, пр-т Леси Украинки, 26</address>
           <a class="footer-email" href="mailto:info@example.com">info@example.com</a>
           <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
